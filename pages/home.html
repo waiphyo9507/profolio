@@ -1,131 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/home.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
 
+    <link rel="stylesheet" href="../styles/home.css" />
+
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </head>
+  <body>
     <!--Nav Bar-->
     <header class="navbar">
+      <div class="container navbar-container">
+        <a href="./home.html" id="logo">Portfolio</a>
 
-        <div class="container navbar-container">
+        <nav class="nav-menu">
+          <ul>
+            <li>
+              <a id="active-menu" href="./home.html">Home</a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="./blogs.html">Blogs</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-            <a href="./home.html" id="logo">Portfolio</a>
-
-            <nav class="nav-menu">
-                <ul>
-                    <li>
-                        <a id="active-menu" href="./home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="./projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="./blogs.html">Blogs</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="nav-action">
-                <a href="#" class="btn-primary">Download CV</a>
-            </div>
-
+        <div class="nav-action">
+          <a href="#" class="btn-primary">Download CV</a>
         </div>
-        
-    </header> 
+      </div>
+    </header>
 
     <!--Hero Section-->
     <section id="hero" class="hero-section">
 
-        <div class="container hero-container">
+      <div class="container hero-container">
+        <div class="hero-left">
+          <p class="greeting">
+            <i class="fa-solid fa-hand-sparkles"></i>
+            Hey there, I am
+          </p>
+          <h1 class="name">Wai Phyo Aung</h1>
+          <h2>Professional <span>Front-end Developer</span></h2>
+          <p class="bio">
+            I design and build fast, elegant, and accessible web experiences
+            with modern front-end technologies.
+          </p>
 
-            <div class="hero-left">
+          <div class="points">
+            <span><i class="fa-solid fa-bolt"></i>Fast UI</span>
+            <span><i class="fa-solid fa-mobile-screen"></i>Responsive</span>
+            <span><i class="fa-solid fa-universal-access"></i>Accessible</span>
+          </div>
 
-                <p class="greeting">Hey there, I am</p>
-                <h1>Wai Phyo Aung</h1>
-                <h2>Professional <span>Front-end Developer</span> </h2>
-                <p class="bio">I design and build fast, elegant, and accessible web experiences with modern front-end technologies.</p>
-                
-                <div class="points">
-                    <span>Fast UI</span>
-                    <span>Responsive</span>
-                    <span>Accessible</span>
-                </div>
+          <div class="hero-action">
+            <a href="" class="btn-primary">Hire Me</a>
+            <a href="" class="btn-secondary">View Projects</a>
+          </div>
+        </div>
 
-                <div class="hero-action">
-                    <a href="" class="btn-primary">Hire Me</a>
-                    <a href="" class="btn-secondary">View Projects</a>
-                </div>
+        <div class="hero-right">
 
-            </div>
-
-            <div class="hero-right">
-                   <div class="hero-image">
+          <div class="hero-image">
             <img src="../images/hero.png" alt="">
           </div>
 
           <div class="info">
-            <span>Open to freelance</span>
-            <span>Yangon, Myanmar</span>
+            <span><i class="fa-solid fa-briefcase" style="color: rgb(0, 255, 16);"></i>Open to freelance</span>
+            <span><i class="fa-solid fa-location-dot"></i>Yangon, Myanmar</span>
           </div>
 
           <div class="tech-focus">
-            <span>Tech focus</span>
+            <span><i class="fa-solid fa-layer-group"></i>Tech focus</span>
             <div>
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
-              <span>4</span>
+              <span><i class="fa-brands fa-html5" style="color: rgb(255, 138, 0);"></i></span>
+              <span><i class="fa-brands fa-css3-alt" style="color: rgb(0, 102, 255);"></i></span>
+              <span><i class="fa-brands fa-js" style="color: rgb(255, 217, 0);"></i></span>
+              <span><i class="fa-brands fa-github"></i></span>
             </div>
           </div>
-
-
-            </div>
 
         </div>
 
-    </section>
+      </div>
+
+    </section>+
 
     <!--Skills Section-->
     <section class="skills-section">
-        <div class="container skills-container">
+
+      <div class="container skills-container">
+
         <h2>My Skills</h2>
+
         <div class="skill-box-container">
+
           <div>
-             <span>1</span>
+            <span ><i class="fa-brands fa-html5" style="color: rgb(255, 138, 0);"></i></span>
             <h3>HTML5 & Semantics</h3>
             <p>Clean structure, accessibility-first markup, and SEO-friendly content.</p>
           </div>
+
           <div>
-            <span>2</span>
+            <span><i class="fa-brands fa-css3-alt" style="color: rgb(0, 102, 255);"></i></span>
             <h3>CSS / UI Design</h3>
             <p>Responsive layouts, design systems, and smooth modern interactions.</p>
           </div>
-          <div> <span>3</span>
-            <h3>JavaScript & Interactivity</h3>
-            <p>Dynamic content, DOM manipulation, and interactive user experiences.</p></div>
+
           <div>
-            <span>4</span>
+            <span><i class="fa-brands fa-js" style="color: rgb(255, 217, 0);"></i></span>
+            <h3>JavaScript & Interactivity</h3>
+            <p>Dynamic content, DOM manipulation, and interactive user experiences.</p>
+          </div>
+
+          <div>
+            <span><i class="fa-solid fa-mobile-screen" style="color: #5570f8;"></i></span>
             <h3>Responsive Development</h3>
             <p>Mobile-first UI that works beautifully across devices and screen sizes.</p>
           </div>
-          </div>
+
         </div>
       </div>
 
     </section>
 
+    <!--Footer-->
     <footer class="footer">
-          <div class="container footer-container">
+
+      <div class="container footer-container">
         
         <div class="footer-top">
 
@@ -158,11 +173,11 @@
         <div class="footer-bottom">
           <p>© 2026 Wai Phyo Aung. All Rights Reserved.</p>
           <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
           </ul>
         </div>
 
@@ -171,8 +186,4 @@
     </footer>
 
   </body>
-</html>
-    </footer> 
-
-</body>
 </html>
